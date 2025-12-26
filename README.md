@@ -26,7 +26,35 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    /* Integer literal */
+    int a = 100;
+
+    /* Floating-point literal */
+    float b = 12.5;
+
+    /* Character literal */
+    char c = 'A';
+
+    /* String literal */
+    char str[] = "Hello C";
+
+    printf("Integer literal value: %d\n", a);
+    printf("Float literal value: %.2f\n", b);
+    printf("Character literal value: %c\n", c);
+    printf("String literal value: %s\n", str);
+
+    return 0;
+}
+
 # Output:
+Integer literal value: 100
+Float literal value: 12.50
+Character literal value: A
+String literal value: Hello C
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +85,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+#include <stdio.h>
+
+/* Macro constant */
+#define PI 3.14
+
+int main()
+{
+    /* Constant variable */
+    const int MAX = 100;
+
+    printf("Value of macro constant PI = %.2f\n", PI);
+    printf("Value of constant variable MAX = %d\n", MAX);
+
+    return 0;
+}
+
 # Output:
+Value of macro constant PI = 3.14
+Value of constant variable MAX = 100
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +127,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int a = 25;          // integer data type
+    float b = 10.5f;     // float data type
+    double c = 123.456;  // double data type
+    char d = 'C';        // character data type
+
+    printf("Integer value: %d\n", a);
+    printf("Float value: %.2f\n", b);
+    printf("Double value: %.3lf\n", c);
+    printf("Character value: %c\n", d);
+
+    return 0;
+}
+
 # Output:
+Integer value: 25
+Float value: 10.50
+Double value: 123.456
+Character value: C
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +187,61 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    /* Read two integers from the user */
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    /* Arithmetic Operations */
+    printf("\nArithmetic Operations:\n");
+    printf("Addition (a + b) = %d\n", a + b);
+    printf("Subtraction (a - b) = %d\n", a - b);
+    printf("Multiplication (a * b) = %d\n", a * b);
+
+    if (b != 0)
+    {
+        printf("Division (a / b) = %d\n", a / b);
+        printf("Remainder (a %% b) = %d\n", a % b);
+    }
+    else
+    {
+        printf("Division and Remainder not possible (b = 0)\n");
+    }
+
+    /* Bitwise Operations */
+    printf("\nBitwise Operations:\n");
+    printf("Bitwise AND (a & b) = %d\n", a & b);
+    printf("Bitwise OR (a | b) = %d\n", a | b);
+    printf("Bitwise XOR (a ^ b) = %d\n", a ^ b);
+    printf("Left Shift (a << 1) = %d\n", a << 1);
+    printf("Right Shift (a >> 1) = %d\n", a >> 1);
+    printf("Bitwise NOT (~a) = %d\n", ~a);
+
+    return 0;
+}
+
 # Output:
+Enter two integers: 25 54
+
+Arithmetic Operations:
+Addition (a + b) = 79
+Subtraction (a - b) = -29
+Multiplication (a * b) = 1350
+Division (a / b) = 0
+Remainder (a % b) = 25
+
+Bitwise Operations:
+Bitwise AND (a & b) = 16
+Bitwise OR (a | b) = 63
+Bitwise XOR (a ^ b) = 47
+Left Shift (a << 1) = 50
+Right Shift (a >> 1) = 12
+Bitwise NOT (~a) = -26
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +286,37 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);   // space before %c handles newline
+
+    /* Check digit */
+    (ch >= '0' && ch <= '9') ?
+        printf("'%c' is a Digit\n", ch) :
+
+    /* Check alphabet */
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+
+        /* Check vowel or consonant */
+        ((ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||
+          ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') ?
+            printf("'%c' is a Vowel\n", ch) :
+            printf("'%c' is a Consonant\n", ch)) :
+
+    /* Otherwise special symbol */
+    printf("'%c' is a Special Symbol\n", ch);
+
+    return 0;
+}
+
 # Output:
+Enter a character: #
+'#' is a Special Symbol
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
