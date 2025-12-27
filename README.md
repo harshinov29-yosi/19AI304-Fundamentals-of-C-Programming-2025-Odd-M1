@@ -86,8 +86,8 @@ int main()
 }
 
 # Output:
-Value of macro constant PI = 3.14
-Value of constant variable MAX = 100
+<img width="1261" height="360" alt="image" src="https://github.com/user-attachments/assets/a493c7cc-a221-4bb5-829e-5ebde370c31b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -115,24 +115,20 @@ Thus, the program was implemented and executed successfully, and the required ou
 
 int main()
 {
-    int a = 25;          // integer data type
-    float b = 10.5f;     // float data type
-    double c = 123.456;  // double data type
-    char d = 'C';        // character data type
-
+    int a = 25;         
+    float b = 10.5f;   
+    double c = 123.456; 
+    char d = 'C';        
     printf("Integer value: %d\n", a);
     printf("Float value: %.2f\n", b);
     printf("Double value: %.3lf\n", c);
     printf("Character value: %c\n", d);
-
     return 0;
 }
 
 # Output:
-Integer value: 25
-Float value: 10.50
-Double value: 123.456
-Character value: C
+<img width="1105" height="387" alt="image" src="https://github.com/user-attachments/assets/d3e3c592-6545-4f72-9883-06c9582c06ad" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -176,12 +172,8 @@ Character value: C
 int main()
 {
     int a, b;
-
-    /* Read two integers from the user */
     printf("Enter two integers: ");
     scanf("%d %d", &a, &b);
-
-    /* Arithmetic Operations */
     printf("\nArithmetic Operations:\n");
     printf("Addition (a + b) = %d\n", a + b);
     printf("Subtraction (a - b) = %d\n", a - b);
@@ -196,8 +188,6 @@ int main()
     {
         printf("Division and Remainder not possible (b = 0)\n");
     }
-
-    /* Bitwise Operations */
     printf("\nBitwise Operations:\n");
     printf("Bitwise AND (a & b) = %d\n", a & b);
     printf("Bitwise OR (a | b) = %d\n", a | b);
@@ -210,22 +200,8 @@ int main()
 }
 
 # Output:
-Enter two integers: 25 54
+<img width="372" height="525" alt="image" src="https://github.com/user-attachments/assets/2335d9aa-c337-4158-88d3-000dc593b01e" />
 
-Arithmetic Operations:
-Addition (a + b) = 79
-Subtraction (a - b) = -29
-Multiplication (a * b) = 1350
-Division (a / b) = 0
-Remainder (a % b) = 25
-
-Bitwise Operations:
-Bitwise AND (a & b) = 16
-Bitwise OR (a | b) = 63
-Bitwise XOR (a ^ b) = 47
-Left Shift (a << 1) = 50
-Right Shift (a >> 1) = 12
-Bitwise NOT (~a) = -26
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -277,30 +253,23 @@ int main()
     char ch;
 
     printf("Enter a character: ");
-    scanf(" %c", &ch);   // space before %c handles newline
-
-    /* Check digit */
+    scanf(" %c", &ch); 
     (ch >= '0' && ch <= '9') ?
         printf("'%c' is a Digit\n", ch) :
-
-    /* Check alphabet */
     ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
-
-        /* Check vowel or consonant */
         ((ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||
           ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') ?
             printf("'%c' is a Vowel\n", ch) :
             printf("'%c' is a Consonant\n", ch)) :
 
-    /* Otherwise special symbol */
     printf("'%c' is a Special Symbol\n", ch);
 
     return 0;
 }
 
 # Output:
-Enter a character: #
-'#' is a Special Symbol
+<img width="402" height="210" alt="image" src="https://github.com/user-attachments/assets/b69ff9e1-8987-45c8-bf29-1d5679871275" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
