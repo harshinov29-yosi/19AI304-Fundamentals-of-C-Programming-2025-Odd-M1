@@ -30,31 +30,21 @@ To build a C program that prints integer, float,character, and string literals o
 
 int main()
 {
-    /* Integer literal */
     int a = 100;
-
-    /* Floating-point literal */
     float b = 12.5;
-
-    /* Character literal */
     char c = 'A';
-
-    /* String literal */
     char str[] = "Hello C";
-
     printf("Integer literal value: %d\n", a);
     printf("Float literal value: %.2f\n", b);
     printf("Character literal value: %c\n", c);
     printf("String literal value: %s\n", str);
-
     return 0;
 }
 
 # Output:
-Integer literal value: 100
-Float literal value: 12.50
-Character literal value: A
-String literal value: Hello C
+<img width="1247" height="447" alt="image" src="https://github.com/user-attachments/assets/ee3bb0e9-80aa-4913-a8b3-b718ef2f8a23" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -86,18 +76,12 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 # Program:
 #include <stdio.h>
-
-/* Macro constant */
 #define PI 3.14
-
 int main()
 {
-    /* Constant variable */
     const int MAX = 100;
-
     printf("Value of macro constant PI = %.2f\n", PI);
     printf("Value of constant variable MAX = %d\n", MAX);
-
     return 0;
 }
 
